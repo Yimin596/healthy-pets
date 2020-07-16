@@ -46,6 +46,18 @@ Task 8: Create FAQ pages<br />
 Task 9: Create login page for the user<br />
 Task 10: Connecting the Login page to the user database<br />
 Task 11: Realize the function of the verification of users<br />
+     <img src="pictures/loginPage.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 5px;" />
+     As the picture shows above, it is the new login page we recently made. Especially, it not only has a simple login buttom but also has a registeration buttom so that we almost made a login page which has a complete function.
+     <img src="pictures/regisrationPage.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 5px;" />
+     As the picture shows above, when we right click the register buttom in login page, it will jump to register page. it not only could provide regisration functionality but also could verify whether the user's email has been registered. You may notice that the password verify function be realized as well.
+     <img src="pictures/PersonalPage.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 5px;" />
+     As the picture shows above, after we successfully registerad and login, the personal page will be shown. This part mainly about our team has done in milestone one. However, we still add a new function which is to log out your account.
 ## Release Notes
 
 Since we failed deployment so many times, the self-confidence of us has been hit. We barely have a direction to figure out the problem so that we have to keep in touch and working together all the time for making our work is on the right track. We revised some functions we made initially. We are wondering that set up the cloud server may be a good idea <br />
