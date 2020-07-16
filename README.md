@@ -27,7 +27,7 @@ As the schedual table shows, for malestone 1, we simply set up the common reposi
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
 As the picture showed above, run the java file which called **HealthPetsApplication.java**. After run the file successfully, open the browser and go to URL: http://localhost:8080/ to see the features of the applcation we made so far.
-## Release Notes
+## Release Notes for milestone 2
 
 Since this is the first time we try to make a web application and there is only two members in our team, we barely have a direction to the target so that we have to keep in touch and working together all the time for making our work is on the right track. We edited the project plan which we create at the very first so that it can looks more reasonable(the original task 1 is to set up the cloud server, and now is to make the common repository).<br />
 So far we create a some basic functions for reacording the information of the pets.
@@ -58,7 +58,8 @@ Task 11: Realize the function of the verification of users<br />
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
      As the picture shows above, after we successfully registerad and login, the personal page will be shown. This part mainly about our team has done in milestone one. However, we still add a new function which is to log out your account.
-## Release Notes
+     Here is the video instruction of the milestone 2: https://use.vg/agHE0w
+## Release Notes for mielstone 2
 
 Since we failed deployment so many times, the self-confidence of us has been hit. We barely have a direction to figure out the problem so that we have to keep in touch and working together all the time for making our work is on the right track. We revised some functions we made initially. We are wondering that set up the cloud server may be a good idea <br />
 So far we create a security check , registeration, recording, delete, edit, and log out function.
