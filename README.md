@@ -50,7 +50,7 @@ Task 11: Realize the function of the verification of users<br />
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
      As the picture shows above, it is the new login page we recently made. Especially, it not only has a simple login buttom but also has a registeration buttom so that we almost made a login page which has a complete function.
-     <img src="pictures/regisrationPage.png"
+     <img src="pictures/registrationPage.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
      As the picture shows above, when we right click the register buttom in login page, it will jump to register page. it not only could provide regisration functionality but also could verify whether the user's email has been registered. You may notice that the password verify function be realized as well.
