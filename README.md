@@ -78,7 +78,7 @@ We also add more column for user to record pet's information to help them with k
 <img src="pictures/addTwoColumns.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
-
+Here is the video instruction of the milestone 3: https://use.vg/hj9s4L
 ## Release Notes for mielstone 3
 
 By testing the application, we found that there are many bugs appears in our application. One of them is the user do not have a personal information database. To solve this, we believe that make a reference to the user database table then each user will have their own information recording table <br />
