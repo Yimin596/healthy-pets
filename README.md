@@ -75,6 +75,9 @@ In this mile stone we also test part of our application by using Junit test. Her
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
 We also add more column for user to record pet's information to help them with knowing their pets more. Here are the screen shot. <br />
+<img src="pictures/addTwoColumns.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 5px;" />
 
 ## Release Notes for mielstone 3
 
