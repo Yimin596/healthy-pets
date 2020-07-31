@@ -31,5 +31,6 @@ public class RecordTest {
 		r.setEvent("h");
 		assertEquals("h", r.getEvent());
 	}
-
+	
+	
 }
