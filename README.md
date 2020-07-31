@@ -79,6 +79,7 @@ We also add more column for user to record pet's information to help them with k
 ## Release Notes for mielstone 3
 
 By testing the application, we found that there are many bugs appears in our application. One of them is the user do not have a personal information database. To solve this, we believe that make a reference to the user database table then each user will have their own information recording table <br />
+We will continue to test our application by using automated test script in following week.
 So far we create a security check , registeration, recording, delete, edit, and log out function.
 
 
