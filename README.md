@@ -71,8 +71,10 @@ So far we create a security check , registeration, recording, delete, edit, and 
 
 For the milestone 3, we've simply done with the application deployment. By using heroku cloud platform service, we finally could see what we have done so far without using LocalHost. Now people are able to see what we have by simply click an url:  https://healthpet.herokuapp.com/login.<br />
 In this mile stone we also test part of our application by using Junit test. Here below is the screen shot of the test.<br />
-
-We also add more column for user to record pet's inoformation to help them with knowing their pets more. Here are the screen shot. <br />
+<img src="pictures/RecordTestOutput.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 5px;" />
+We also add more column for user to record pet's information to help them with knowing their pets more. Here are the screen shot. <br />
 
 ## Release Notes for mielstone 2
 
