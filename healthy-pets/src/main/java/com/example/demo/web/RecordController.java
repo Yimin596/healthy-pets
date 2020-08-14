@@ -1,6 +1,7 @@
 package com.example.demo.web;
 
-
+import java.security.Principal;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,13 +14,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.Record;
+import com.example.demo.model.User;
 import com.example.demo.repository.RecordsRepository;
+import com.example.demo.service.RecordService;
+import com.example.demo.service.UserServiceImpl;
 
 @Controller
 @RequestMapping("/records/")
 public class RecordController {
 	
 	private final RecordsRepository recordsRepository;
+	@Autowired
+	private UserServiceImpl userService;
+	@Autowired
+	private RecordService recordService;
 	
 	@Autowired
     public RecordController(RecordsRepository recordsRepository) {
@@ -33,20 +41,36 @@ public class RecordController {
 	}
 	
 	@GetMapping("records-list")
-	public String recordsList(Model model)
+	public String recordsList(Model model, Principal principal)
 	{
-		model.addAttribute("records", recordsRepository.findAll());
+		
+	 	String email = principal.getName();
+	 //	System.out.println(email);
+		User user = userService.findByEmail(email);
+		//System.out.println(user);
+	//	System.out.println(recordService.findUserRecords(user));
+		model.addAttribute("records", recordService.findUserRecords(user));
+		
+		//model.addAttribute("records", recordsRepository.findAll());
+		
 		return "index";
 	}
 	
 	@PostMapping("add")
-	public String addRecord(@Valid Record record, BindingResult result, Model model)
+	public String addRecord(@Valid Record record, BindingResult result, Model model, Principal principal)
 	{
 		if (result.hasErrors())
 		{
 			return "add-record";
 		}
-		recordsRepository.save(record);
+		String email = principal.getName();
+		// System.out.println(email);
+		// System.out.println(userService.findByEmail(email));
+		 
+		 recordService.addRecord(record, userService.findByEmail(email));
+		 
+		//recordsRepository.save(record);
+		
 		return "redirect:records-list";
 	}
 	
@@ -60,24 +84,35 @@ public class RecordController {
 	}
 	@PostMapping("update/{id}")
     public String updateRecord(@PathVariable("id") long id, @Valid Record record, 
-    		BindingResult result, Model model) {
+    		BindingResult result, Model model, Principal principal) {
 		if (result.hasErrors())
 		{
 			record.setId(id);
 			return "update-record";
 		}
 		recordsRepository.save(record);
-		model.addAttribute("records", recordsRepository.findAll());
+		 String email = principal.getName();
+		 //	System.out.println(email);
+			User user = userService.findByEmail(email);
+			//System.out.println(user);
+		//	System.out.println(recordService.findUserRecords(user));
+			model.addAttribute("records", recordService.findUserRecords(user));
+		//model.addAttribute("records", recordsRepository.findAll());
 		return "index";
 	}
 	
 	 @GetMapping("delete/{id}")
-	 public String deleteRecord(@PathVariable("id") long id, Model model)
+	 public String deleteRecord(@PathVariable("id") long id, Model model, Principal principal)
 	 {
 		 Record record = recordsRepository.findById(id).orElseThrow(() 
 				 -> new IllegalArgumentException("Invalid record Id:" + id));
 		 recordsRepository.delete(record);
-		 model.addAttribute("records", recordsRepository.findAll());
+		 String email = principal.getName();
+		 //	System.out.println(email);
+			User user = userService.findByEmail(email);
+			//System.out.println(user);
+		//	System.out.println(recordService.findUserRecords(user));
+			model.addAttribute("records", recordService.findUserRecords(user));
 		 return "index";
 	 }
 }

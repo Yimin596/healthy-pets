@@ -13,6 +13,12 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Constraint(validatedBy = FieldMatchValidator.class)
 @Documented
+/**
+ * This is the interface of field matching 
+ * which defines several <code>@FieldMatch</code> annotations on the same element.
+ * @author Zijun Mei, Yimin Li
+ *
+ */
 public @interface FieldMatch
 {
     String message() default "{constraints.field-match}";
