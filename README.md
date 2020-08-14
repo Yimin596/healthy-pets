@@ -91,7 +91,7 @@ In this mile stone we also fixed the bug of index page display error and record 
 We also add a FAQ page for display applcation information and questions user most concerned about.<br />
 Finally, we optimized the application by add the return bottom in each page so that user will have a better experience.<br />
 
-Here is the video instruction of the milestone 4: https://use.vg/hj9s4L
+Here is the video instruction of the milestone 4: https://use.vg/dabYJJ
 ## Release Notes for milestone 4
 
 Most of the time, during the period of milestone 4, we are doing test and debugging. what we learned is a well prepared project is always better than temporary idea.<br />
