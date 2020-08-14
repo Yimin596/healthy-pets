@@ -83,7 +83,7 @@ public class RecordController {
 		return "update-record";
 	}
 	@PostMapping("update/{id}")
-    public String updateRecord(@PathVariable("id") long id, @Valid Record record, 
+    	public String updateRecord(@PathVariable("id") long id, @Valid Record record, 
     		BindingResult result, Model model, Principal principal) {
 		if (result.hasErrors())
 		{
@@ -91,12 +91,13 @@ public class RecordController {
 			return "update-record";
 		}
 		recordsRepository.save(record);
-		 String email = principal.getName();
+		String email = principal.getName();
 		 //	System.out.println(email);
-			User user = userService.findByEmail(email);
+	    	recordService.addRecord(record, userService.findByEmail(email));
+		User user = userService.findByEmail(email);
 			//System.out.println(user);
 		//	System.out.println(recordService.findUserRecords(user));
-			model.addAttribute("records", recordService.findUserRecords(user));
+		model.addAttribute("records", recordService.findUserRecords(user));
 		//model.addAttribute("records", recordsRepository.findAll());
 		return "index";
 	}
