@@ -62,7 +62,7 @@ Task 11: Realize the function of the verification of users<br />
      style="float: left; margin-right: 5px;" />
      As the picture shows above, after we successfully registerad and login, the personal page will be shown. This part mainly about our team has done in milestone one. However, we still add a new function which is to log out your account.
      Here is the video instruction of the milestone 2: https://use.vg/agHE0w
-## Release Notes for mielstone 2
+## Release Notes for milestone 2
 
 Since we failed deployment so many times, the self-confidence of us has been hit. We barely have a direction to figure out the problem so that we have to keep in touch and working together all the time for making our work is on the right track. We revised some functions we made initially. We are wondering that set up the cloud server may be a good idea <br />
 So far we create a security check , registeration, recording, delete, edit, and log out function.
@@ -79,10 +79,23 @@ We also add more column for user to record pet's information to help them with k
      alt="Markdown Monster icon"
      style="float: left; margin-right: 5px;" />
 Here is the video instruction of the milestone 3: https://use.vg/hj9s4L
-## Release Notes for mielstone 3
+## Release Notes for milestone 3
 
 By testing the application, we found that there are many bugs appears in our application. One of them is the user do not have a personal information database. To solve this, we believe that make a reference to the user database table then each user will have their own information recording table <br />
 We will continue to test our application by using automated test script in following week.
 So far we create a security check , registeration, recording, delete, edit, and log out function.
+## Milestone 4
+
+For the milestone 4, we've  done with the entire application development. By using heroku cloud platform service, users are able to see what we have done by simply click an url:  https://healthpet.herokuapp.com/login.<br />
+In this mile stone we also fixed the bug of index page display error and record list display error. <br />
+We also add a FAQ page for display applcation information and questions user most concerned about.<br />
+Finally, we optimized the application by add the return bottom in each page so that user will have a better experience.<br />
+
+Here is the video instruction of the milestone 4: https://use.vg/hj9s4L
+## Release Notes for milestone 4
+
+Most of the time, during the period of milestone 4, we are doing test and debugging. what we learned is a well prepared project is always better than temporary idea.<br />
+A rigorous design process can save a lot of time during the developing. <br />
+
 
 
